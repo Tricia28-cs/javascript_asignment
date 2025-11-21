@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Classwork: JavaScript - Array</title>
+    </head>
+    <body>
+        <h3>Today Fruits</h3>
+        <ul id="fruit-list"></ul>
+        <hr />
+        <h3>Today Vegetables</h3>
+        <ul id="veg-list"></ul>
+
+        <script>
+        fruits = ["Apple", "Banana", "Orange", "Mango", "Strawberry"];
+        vegetables = ["Carrot", "Broccoli", "Spinach", "Tomato", "Cucumber"];
+        
+        fruitListElement = document.getElementById("fruit-list");
+        vegListElement = document.getElementById("veg-list");
+        
+        fruits.forEach(function (fruit) {
+            li = document.createElement("li"); 
+            li.textContent = fruit;                 
+            fruitListElement.appendChild(li);        
+        });
+
+        vegetables.forEach(function (veg) {
+            li = document.createElement("li");
+            li.textContent = veg;
+            vegListElement.appendChild(li);
+        });
+        </script>
+    </body>
+</html>

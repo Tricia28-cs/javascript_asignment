@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Classwork: JavaScript Array - filter</title>
+    </head>
+    <body>
+        <script>
+            const people = [
+                "Alice Anderson",
+                "Aaron Adams",
+                "Bella Brown",
+                "Brian Black",
+                "Cathy Carter",
+                "Charles Cooper",
+                "Diana Davis",
+                "Daniel Drake",
+                "Ella Evans",
+                "Ethan Edwards",
+                "Fiona Fisher",
+                "Frank Foster",
+                "Grace Green",
+                "Gavin Gray",
+                "Hannah Harris",
+                "Henry Hill",
+                "Isabella Ingram",
+                "Ian Irving",
+                "Jack Johnson",
+                "Julia James"
+            ];
+
+            const targetLetter = "B";
+
+            const result = people.filter(function (name) {
+                const firstChar = name.charAt(0);
+
+                return firstChar.toUpperCase() === targetLetter.toUpperCase();
+            });
+
+            console.log("Filter letter:", targetLetter);
+            console.log("Original list:", people);
+            console.log("Filtered result:", result);
+        </script>
+    </body>
+</html>
